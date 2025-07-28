@@ -1,0 +1,656 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Your Financial Future: Exclusive SoFi Bonuses Await!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Color Palette: Energetic & Playful */
+        :root {
+            --color-green: #06D6A0;
+            --color-blue: #118AB2;
+            --color-yellow: #FFD166;
+            --color-red: #EF476F;
+            --color-pink: #FF6B6B;
+            --color-dark: #073B4C;
+            --color-gray: #4D4D4D;
+            --color-light-bg: #F0F4F8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-light-bg);
+            color: var(--color-gray);
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Max width for charts */
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px; /* Base height for charts */
+            max-height: 400px; /* Max height for charts */
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px; /* Smaller height on mobile */
+            }
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        .kpi-card {
+            border-left: 5px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .kpi-value {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1;
+            color: var(--color-dark);
+        }
+        .kpi-label {
+            font-size: 1rem;
+            color: var(--color-gray);
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-green);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(6, 214, 160, 0.4);
+        }
+        .cta-button:hover {
+            background-color: #05B387; /* Slightly darker green */
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(6, 214, 160, 0.6);
+        }
+
+        .section-title {
+            color: var(--color-blue);
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid #E2E8F0;
+        }
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--color-green);
+            flex-shrink: 0;
+        }
+        .feature-text {
+            font-size: 1rem;
+            color: var(--color-gray);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6" style="color: var(--color-yellow);">
+                Unlock Your Financial Potential: <br class="hidden md:inline">Exclusive SoFi Bonuses Await!
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto">
+                Get more from your money with SoFi's all-in-one platform for banking, loans, and investing.
+                Start with up to <span class="font-bold text-yellow-300">$300 cash bonus</span> on direct deposits and a leading <span class="font-bold text-yellow-300">4.00% APY</span> on savings!
+            </p>
+            <a href="#bonuses" class="cta-button">
+                Claim Your Bonuses Now!
+            </a>
+            <p class="text-sm mt-4 text-white text-opacity-80">
+                (Affiliate disclosure: We may earn a commission when you click our links.)
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Introduction & Key Stats Section -->
+        <section id="introduction" class="text-center mb-16">
+            <h2 class="section-title">Why SoFi? Your All-in-One Financial Partner</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-700 mb-12">
+                SoFi goes beyond traditional banking, offering a comprehensive suite of financial products designed to simplify your life and maximize your money. From high-yield savings to smart lending and investing tools, SoFi helps you achieve your financial goals.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="kpi-card" style="border-left-color: var(--color-green);">
+                    <div class="kpi-value">4.00%</div>
+                    <div class="kpi-label">APY on Savings (with DD)</div>
+                </div>
+                <div class="kpi-card" style="border-left-color: var(--color-yellow);">
+                    <div class="kpi-value">$0</div>
+                    <div class="kpi-label">Monthly Account Fees</div>
+                </div>
+                <div class="kpi-card" style="border-left-color: var(--color-red);">
+                    <div class="kpi-value">2 Days</div>
+                    <div class="kpi-label">Early Paycheck Access</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonuses Section -->
+        <section id="bonuses" class="mb-16">
+            <h2 class="section-title">Your Exclusive SoFi Signup Bonuses</h2>
+
+            <!-- Banking Bonus -->
+            <div class="card mb-12 p-8">
+                <h3 class="text-3xl font-bold text-center mb-6" style="color: var(--color-red);">
+                    Boost Your Savings: Up to $300 Direct Deposit Bonus!
+                </h3>
+                <p class="max-w-2xl mx-auto text-lg text-gray-700 text-center mb-8">
+                    Make SoFi Checking and Savings your primary account and get rewarded generously. The more you direct deposit, the bigger your bonus!
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <ul class="space-y-4 text-gray-700 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-pink);">💸</span>
+                                <div>Earn a <strong class="font-bold text-pink-600">$300 cash bonus</strong> for cumulative direct deposits of <strong class="font-bold text-pink-600">$5,000 or more</strong> within the bonus period.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-red);">💰</span>
+                                <div>Receive a <strong class="font-bold text-red-600">$50 cash bonus</strong> for cumulative direct deposits between <strong class="font-bold text-red-600">$1,000 and $4,999.99</strong>.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-dark);">⚡</span>
+                                <div>Plus, get your paycheck <strong class="font-bold text-dark-blue-700">up to 2 days early</strong> with qualifying direct deposit.</div>
+                            </li>
+                        </ul>
+                        <div class="text-center mt-8">
+                            <a href="https://www.sofi.com/invite/money?gcp=94d63a7c-8756-4c75-9009-7767fca45713&isAliasGcp=false" target="_blank" class="cta-button" style="background-color: var(--color-red); box-shadow: 0 5px 15px rgba(239, 71, 111, 0.4);">
+                                Open SoFi Checking & Savings
+                            </a>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="directDepositBonusChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loan Bonuses -->
+            <div class="card mb-12 p-8">
+                <h3 class="text-3xl font-bold text-center mb-6" style="color: var(--color-blue);">
+                    Smart Borrowing: Save Big on Loans
+                </h3>
+                <p class="max-w-2xl mx-auto text-lg text-gray-700 text-center mb-8">
+                    Whether it's student loans, personal loans, or a new home, SoFi helps you borrow smarter with competitive rates and exclusive bonuses that put money back in your pocket.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4" style="color: var(--color-green);">Student Loan Refinancing Bonuses</h4>
+                        <ul class="space-y-4 text-gray-700 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-green);">💰</span>
+                                <div>Partner-specific <strong class="font-bold text-green-600">up to $500 bonus</strong> for refinancing $100,000+ student loans.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-green);">🎓</span>
+                                <div>"Good Grades" program for private student loans: <strong class="font-bold text-green-600">$250 bonus</strong> for a full-year loan (3.0+ GPA).</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-green);">🩺</span>
+                                <div><strong class="font-bold text-green-600">Special $1,000 bonus</strong> for Doctors & Dentists (paid into SoFi Money account).</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-green);">📊</span>
+                                <div>Stackable rate discounts like <strong class="font-bold text-green-600">0.25% for Autopay</strong> and <strong class="font-bold text-green-600">0.125% for SoFi Plus</strong>.</div>
+                            </li>
+                        </ul>
+                         <div class="text-center mt-8">
+                            <a href="https://www.sofi.com/invite/student-loans?gcp=507d9695-f009-4fb2-b26e-b9b006d7d330&isAliasGcp=false" target="_blank" class="cta-button" style="background-color: var(--color-green); box-shadow: 0 5px 15px rgba(6, 214, 160, 0.4);">
+                                Refinance Your Student Loans
+                            </a>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="studentLoanBonusChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-12">
+                    <div class="chart-container">
+                        <canvas id="mortgageCashBackChart"></canvas>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4" style="color: var(--color-yellow);">Mortgage & Home Loan Benefits</h4>
+                        <ul class="space-y-4 text-gray-700 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-yellow);">🏠</span>
+                                <div>Opportunity to earn <strong class="font-bold text-yellow-600">up to $9,500 cash back</strong> after closing on a home loan. (Average cash back around $1,700).</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-yellow);">✨</span>
+                                <div>SoFi Plus members may receive a <strong class="font-bold text-yellow-600">$1,000 discount</strong> off standard origination fees.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-yellow);">✔️</span>
+                                <div><strong class="font-bold text-yellow-600">$10,000 Close On Time Guarantee</strong> if SoFi's fault delays your closing.</div>
+                            </li>
+                        </ul>
+                        <div class="text-center mt-8">
+                            <a href="https://www.sofi.com/home-loans/mortgage/" target="_blank" class="cta-button" style="background-color: var(--color-yellow); color: var(--color-dark); box-shadow: 0 5px 15px rgba(255, 209, 102, 0.4);">
+                                Explore SoFi Mortgages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-12">
+                    <div class="chart-container">
+                        <canvas id="personalLoanRatesChart"></canvas>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4" style="color: var(--color-blue);">Personal Loan Benefits</h4>
+                        <p class="text-gray-700 mb-6">Consolidate debt, fund home improvements, or cover unexpected expenses with low fixed rates and no hidden fees.</p>
+                        <ul class="space-y-4 text-gray-700 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-blue);">💸</span>
+                                <div>Get funds as soon as the <strong class="font-bold text-blue-600">same day you sign</strong>.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-blue);">🚫</span>
+                                <div><strong class="font-bold text-blue-600">No origination fees</strong>, no prepayment penalties, no late fees.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-blue);">⭐</span>
+                                <div>Potentially save <strong class="font-bold text-blue-600">thousands in interest</strong> by consolidating high-rate debt.</div>
+                            </li>
+                        </ul>
+                        <div class="text-center mt-8">
+                            <a href="https://www.sofi.com/invite/personal-loans?gcp=8610ec28-e3d7-4d2e-b52d-abec4ba45422&isAliasGcp=false" target="_blank" class="cta-button" style="background-color: var(--color-blue); box-shadow: 0 5px 15px rgba(17, 138, 178, 0.4);">
+                                Get a SoFi Personal Loan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investing Bonus -->
+            <div class="card mb-12 p-8">
+                <h3 class="text-3xl font-bold text-center mb-6" style="color: var(--color-pink);">
+                    Grow Your Wealth: Invest with SoFi
+                </h3>
+                <p class="max-w-2xl mx-auto text-lg text-gray-700 text-center mb-8">
+                    SoFi Invest empowers you to build wealth with accessible tools and unique member benefits that can accelerate your investment growth.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <ul class="space-y-4 text-gray-700 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-pink);">📈</span>
+                                <div><strong class="font-bold text-pink-600">Unlimited 1% match</strong> on all recurring deposits to your SoFi Invest account for SoFi Plus members (paid in rewards points).</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-pink);">👴</span>
+                                <div>Potential for a <strong class="font-bold text-pink-600">1% IRA match</strong> on rollovers and contributions, for substantial retirement savings.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3" style="color: var(--color-pink);">💎</span>
+                                <div>Occasional asset transfer bonuses that can yield significant value for large investment moves.</div>
+                            </li>
+                        </ul>
+                        <div class="text-center mt-8">
+                            <a href="https://www.sofi.com/invest/" target="_blank" class="cta-button" style="background-color: var(--color-pink); box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);">
+                                Start Investing with SoFi
+                            </a>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="investingMatchChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overall Benefits / Trust Section -->
+        <section id="overall-benefits" class="mb-16">
+            <h2 class="section-title">Beyond the Bonuses: Why SoFi is Your Smart Choice</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-700 text-center mb-12">
+                SoFi is more than just a collection of financial products; it's a commitment to your financial well-being, offering integrated services and unparalleled support.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card feature-item" style="border-left-color: var(--color-green);">
+                    <span class="feature-icon" style="color: var(--color-green);">🚫</span>
+                    <span class="feature-text">No Account Fees on Checking & Savings</span>
+                </div>
+                <div class="card feature-item" style="border-left-color: var(--color-blue);">
+                    <span class="feature-icon" style="color: var(--color-blue);">📱</span>
+                    <span class="feature-text">All-in-One Mobile App Experience</span>
+                </div>
+                <div class="card feature-item" style="border-left-color: var(--color-yellow);">
+                    <span class="feature-icon" style="color: var(--color-yellow);">👩‍💼</span>
+                    <span class="feature-text">Dedicated Member Support</span>
+                </div>
+                <div class="card feature-item" style="border-left-color: var(--color-red);">
+                    <span class="feature-icon" style="color: var(--color-red);">🔒</span>
+                    <span class="feature-text">FDIC Insured Up to $2M with Partner Banks</span>
+                </div>
+                <div class="card feature-item" style="border-left-color: var(--color-pink);">
+                    <span class="feature-icon" style="color: var(--color-pink);">💳</span>
+                    <span class="feature-text">Mastercard® Debit Card & Free ATMs</span>
+                </div>
+                <div class="card feature-item" style="border-left-color: var(--color-dark);">
+                    <span class="feature-icon" style="color: var(--color-dark);">🌟</span>
+                    <span class="feature-text">Exclusive Member Perks & Events</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="text-center py-16 bg-blue-500 rounded-lg shadow-xl mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                Ready to Get Your Money Right?
+            </h2>
+            <p class="text-xl md:text-2xl text-white text-opacity-90 mb-10 max-w-3xl mx-auto">
+                Don't miss out on these exclusive bonuses and the pathway to a brighter financial future.
+            </p>
+            <a href="https://www.sofi.com/invite/money?gcp=94d63a7c-8756-4c75-9009-7767fca45713&isAliasGcp=false" target="_blank" class="cta-button" style="background-color: var(--color-yellow); color: var(--color-dark); box-shadow: 0 5px 20px rgba(255, 209, 102, 0.6);">
+                Explore All SoFi Offers Today!
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-6 mt-16">
+        <p>&copy; 2025 Your Affiliate Site. All Rights Reserved.</p>
+        <p class="text-xs text-gray-400 mt-2">
+            Disclaimer: Offers are subject to change and may vary. Please refer to SoFi's official website for the most up-to-date terms and conditions. We may earn a commission from qualifying purchases made through our links.
+        </p>
+    </footer>
+
+    <script>
+        const energeticPalette = {
+            green: '#06D6A0',
+            blue: '#118AB2',
+            yellow: '#FFD166',
+            red: '#EF476F',
+            pink: '#FF6B6B',
+            dark: '#073B4C',
+            gray: '#4D4D4D'
+        };
+
+        const tooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        
+        function wrapLabels(label, maxLength) {
+            if (label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            let currentLine = '';
+            const lines = [];
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength && currentLine.length > 0) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        // Student Loan Refinance Bonus Chart
+        const studentLoanBonusCtx = document.getElementById('studentLoanBonusChart').getContext('2d');
+        const studentLoanBonusLabels = ['Refinance $100K+', 'Good Grades (Full Year)', 'Autopay Discount', 'SoFi Plus Discount'];
+        const studentLoanBonusData = {
+            labels: studentLoanBonusLabels.map(label => wrapLabels(label, 16)),
+            datasets: [{
+                label: 'Potential Value',
+                data: [500, 250, 0.25, 0.125], // Numbers are for illustration, 0.25/0.125 are percentages
+                backgroundColor: [
+                    energeticPalette.green,
+                    energeticPalette.blue,
+                    energeticPalette.yellow,
+                    energeticPalette.red
+                ],
+                borderColor: '#ffffff',
+                borderWidth: 2
+            }]
+        };
+        new Chart(studentLoanBonusCtx, {
+            type: 'bar',
+            data: studentLoanBonusData,
+            options: {
+                ...tooltipConfig,
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Student Loan Refinance Incentives',
+                        font: { size: 16 },
+                        color: energeticPalette.dark
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Value (USD or % reduction)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Mortgage Cash Back Chart (Doughnut representing max vs typical)
+        const mortgageCashBackCtx = document.getElementById('mortgageCashBackChart').getContext('2d');
+        const mortgageCashBackLabels = ['Maximum Cash Back', 'Typical Average'];
+        const mortgageCashBackData = {
+            labels: mortgageCashBackLabels.map(label => wrapLabels(label, 16)),
+            datasets: [{
+                label: 'Mortgage Cash Back Potential',
+                data: [9500, 1700],
+                backgroundColor: [
+                    energeticPalette.blue,
+                    energeticPalette.dark
+                ],
+                borderColor: '#ffffff',
+                borderWidth: 2
+            }]
+        };
+        new Chart(mortgageCashBackCtx, {
+            type: 'doughnut',
+            data: mortgageCashBackData,
+            options: {
+                ...tooltipConfig,
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Mortgage Cash Back Potential',
+                        font: { size: 16 },
+                        color: energeticPalette.dark
+                    }
+                }
+            }
+        });
+
+        // Direct Deposit Bonus Chart
+        const directDepositBonusCtx = document.getElementById('directDepositBonusChart').getContext('2d');
+        const directDepositBonusLabels = ['≥ $5,000 Direct Deposit', '$1,000 - $4,999 Direct Deposit'];
+        const directDepositBonusData = {
+            labels: directDepositBonusLabels.map(label => wrapLabels(label, 16)),
+            datasets: [{
+                label: 'Bonus Amount',
+                data: [300, 50],
+                backgroundColor: [
+                    energeticPalette.pink,
+                    energeticPalette.red
+                ],
+                borderColor: '#ffffff',
+                borderWidth: 2
+            }]
+        };
+        new Chart(directDepositBonusCtx, {
+            type: 'bar',
+            data: directDepositBonusData,
+            options: {
+                ...tooltipConfig,
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'SoFi Checking & Savings Direct Deposit Bonuses',
+                        font: { size: 16 },
+                        color: energeticPalette.dark
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Bonus Amount (USD)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Personal Loan Rates Chart
+        const personalLoanRatesCtx = document.getElementById('personalLoanRatesChart').getContext('2d');
+        const personalLoanRatesLabels = ['Consolidate Debt', 'Home Improvement', 'Other Expenses'];
+        const personalLoanRatesData = {
+            labels: personalLoanRatesLabels.map(label => wrapLabels(label, 16)),
+            datasets: [{
+                label: 'Loan Purpose',
+                data: [40, 30, 30], /* Example distribution */
+                backgroundColor: [
+                    energeticPalette.blue,
+                    energeticPalette.dark,
+                    energeticPalette.gray
+                ],
+                borderColor: '#ffffff',
+                borderWidth: 2
+            }]
+        };
+        new Chart(personalLoanRatesCtx, {
+            type: 'pie',
+            data: personalLoanRatesData,
+            options: {
+                ...tooltipConfig,
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Common Personal Loan Uses',
+                        font: { size: 16 },
+                        color: energeticPalette.dark
+                    }
+                }
+            }
+        });
+
+        // Investing Match Chart
+        const investingMatchCtx = document.getElementById('investingMatchChart').getContext('2d');
+        const investingMatchLabels = ['Recurring Deposit Match', 'IRA Match Potential'];
+        const investingMatchData = {
+            labels: investingMatchLabels.map(label => wrapLabels(label, 16)),
+            datasets: [{
+                label: 'Match Percentage',
+                data: [1, 1], // 1% for both
+                backgroundColor: [
+                    energeticPalette.yellow,
+                    energeticPalette.gray
+                ],
+                borderColor: '#ffffff',
+                borderWidth: 2
+            }]
+        };
+        new Chart(investingMatchCtx, {
+            type: 'pie',
+            data: investingMatchData,
+            options: {
+                ...tooltipConfig,
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'SoFi Invest Match Opportunities',
+                        font: { size: 16 },
+                        color: energeticPalette.dark
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
